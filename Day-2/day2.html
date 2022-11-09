@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            height: auto;
+            width: 80%;
+            border: 1px solid;
+            text-align: center;
+        }
+
+        .navbar {
+            display: grid;
+            height: auto;
+            width: 100%;
+            margin: auto;
+            grid-template-columns: repeat(9, 10%);
+            border: 1px solid;
+            text-align: center;
+
+        }
+
+        .navbar div {
+            display: flex;
+            height: auto;
+
+            /* text-align: center; */
+            padding-left: 15px;
+            align-items: flex-end;
+            border: 1px solid;
+        }
+
+        /* .navbar>div:nth-child(1){
+            width: 100%;
+           
+        }
+        .navbar>div:nth-child(2){
+            width: 80%;
+           margin-left: 25px;
+            
+        } */
+
+        .navbar img {
+            width: 10%;
+        }
+
+        #logo {
+            width: 100%;
+
+        }
+
+        #mid {
+            display: flex;
+            height: 500px;
+            width: 100%;
+            border: 1px solid;
+            margin: auto;
+            justify-content: space-between;
+        }
+
+        #mid>div {
+            height: 400px;
+            width: 40%;
+            border: 1px solid;
+
+        }
+
+        #mid>div:nth-child(2)>img {
+            width: 100%;
+        }
+
+        /* .img_round{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+
+        }
+        .img_round>div{
+            border: 1px solid;
+        } */
+        #mid2 {
+            height: 500px;
+            width: 100%;
+            border: 1px solid;
+            margin: auto;
+
+            text-align: center;
+            align-items: center;
+        }
+
+        #mid2>div {
+            display: flex;
+            height: auto;
+            width: 100%;
+            border: 1px solid;
+
+
+        }
+
+        #mid2_img {
+            padding-left: 130px;
+            width: 80%;
+
+        }
+
+        #mid3 {
+
+            display: grid;
+            grid-template-columns: repeat(2, 49%);
+            grid-template-rows: auto;
+            justify-content: space-evenly;
+
+
+        }
+
+        #mid3>div {
+            border: 1px solid;
+        }
+
+        #mid3 img {
+            width: 100%;
+        }
+
+        #mid4 {
+            height: 500px;
+            width: 100%;
+            border: 1px solid;
+            margin: auto;
+
+            text-align: center;
+            align-items: center;
+        }
+
+        #mid5 {
+            height: 500px;
+            width: 100%;
+            border: 1px solid;
+            margin: auto;
+            background-color: blue;
+
+        }
+
+        #bottom {
+            display: flex;
+            height: auto;
+            width: 100%;
+            border: 1px solid;
+            margin: auto;
+            justify-content: space-between;
+            background-color: rgb(26, 26, 38);
+            color: white;
+        }
+
+        #bottom>div:nth-child(1) {
+            display: flex;
+            height: 120px;
+            width: 30%;
+            border: 1px solid;
+            color:white;
+          
+        }
+
+        #bottom>div:nth-child(2) {
+            display: flex;
+            height: auto;
+            width: 60%;
+            border: 1px solid;
+            color:white;
+            margin-top: 5%;
+        }
+        li{
+            float: left;
+            list-style: none;
+            margin-bottom: 25px;
+             margin: 20px 20px; 
+            padding: -20px;
+          
+        }
+        nav{
+            height: auto;
+            display: grid;
+            text-align:left;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto; 
+        
+            
+        }
+        #bottom_img{
+           width: 30%;
+          
+        }
+        h3{
+            margin-top: -2px;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <div class="navbar">
+            <div>
+                <img id="logo"
+                    src="https://img.freepik.com/free-vector/home-gymnastics-abstract-concept-vector-illustration-stay-active-amid-quarantine-power-training-online-exercise-program-home-workout-social-distance-fitness-livestream-abstract-metaphor_335657-1713.jpg?w=2000"
+                    alt="error">
+            </div>
+            <div>WORKOUTS
+                <img src="https://cdn-icons-png.flaticon.com/128/6364/6364586.png" alt="">
+            </div>
+            <div>PROGRAM
+                <img src="https://cdn-icons-png.flaticon.com/128/6364/6364586.png" alt="">
+            </div>
+            <div>HEALTHY LIVING
+                <img src="https://cdn-icons-png.flaticon.com/128/6364/6364586.png" alt="">
+            </div>
+            <div>COMMUNITY
+                <img src="https://cdn-icons-png.flaticon.com/128/6364/6364586.png" alt="">
+            </div>
+            <div>ABOUT
+                <img src="https://cdn-icons-png.flaticon.com/128/6364/6364586.png" alt="">
+            </div>
+            <div>STORE
+                <img src="https://cdn-icons-png.flaticon.com/128/6364/6364586.png" alt="">
+            </div>
+            <div>MEMBERSHIP
+                <img src="https://cdn-icons-png.flaticon.com/128/6364/6364586.png" alt="">
+            </div>
+            <div>Hi! Sign In <br>My Fitness</div>
+
+        </div>
+
+        <div id="mid">
+
+            <div>
+                <p>Feel Great.
+                    Body and Mind.
+                    Choose from hundreds of workouts,
+                    healthy recipes,
+                    relaxing meditations,
+                    and expert articles,
+                    for a whole body and mind approach to feeling great.</p>
+                <button>JOIN NOW</button>
+            </div>
+            <div class="img_round">
+
+                <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/team-720.webp" alt="">
+
+
+
+            </div>
+
+        </div>
+
+        <div id="mid2">
+            <div>
+                <p style="width:50% ;">Introducing
+                    FB Plus Passes
+                    Passes give you full access to everything FB Plus has to offer,
+                    without a long-term subscription.
+                    Choose a pass that fits your budget and your schedule.</p>
+            </div>
+            <div>
+
+                <img id="mid2_img" src="https://cloudfront.fitnessblender.com/assets/img/homepage/passes-720.webp"
+                    alt="">
+
+
+            </div>
+
+        </div>
+
+
+        <div id="mid3">
+            <div>
+                <p>Workout Videos
+                    Exercise with certified personal trainers whether you’re at home or on the road.</p>
+                <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/workouts-720.webp" alt="">
+            </div>
+            <div>
+                <p>Programs
+                    Professionally designed programs take the guesswork out of exercising.
+
+                    Browse All Programs</p>
+                <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/programs-720.webp" alt="">
+            </div>
+            <div>
+                <p>Wellness Articles
+                    Research-backed articles to help you care for your body and mind.
+
+                    Learn from Experts</p>
+                <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/articles-720.webp" alt="">
+            </div>
+            <div>
+                <p>Healthy Recipes
+                    Fuel your day with recipes by Registered Dietitians and professional chefs.
+
+                    Find a Recipe
+                </p>
+                <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/recipes-720.webp" alt="">
+            </div>
+        </div>
+
+        <div id="mid4">
+            <p>Supportive Community
+                Stay motivated and engaged with a little help from a supportive community of other members.
+
+                Become a Member</p>
+            <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/community-1440.webp" alt="">
+
+        </div>
+
+        <div id="mid5">
+
+        </div>
+
+        <p>View All Programs</p>
+
+
+        <div id="bottom">
+            <div>
+                <img id="bottom_img" src="https://img.freepik.com/free-vector/home-gymnastics-abstract-concept-vector-illustration-stay-active-amid-quarantine-power-training-online-exercise-program-home-workout-social-distance-fitness-livestream-abstract-metaphor_335657-1713.jpg?w=2000" alt="">
+            <h3>SWEAT <br> BOSS! <br>& <br> WEIGHT <br>LOSS!</h3>
+          
+            </div>
+            <div>
+
+             <nav>
+               <li> WORKOUTS</li>
+               <li>HEALTHY LIVING</li>
+              <li>ABOUT</li>
+              <li>MEMBERSHIP</li>
+              <li>FITNESS</li>
+              <li>CAREERS</li>
+              <li>FB PLUS</li>
+               <li>WORKOUTS VIDEOS</li>
+               <li>CUSTOM WORKOUTS</li>
+               <li>HEALTH</li>
+               <li>TUTORIALS</li>
+               <li>COMMUNITY</li>
+               <li>PROGRAMS</li>
+               <li>NUTRITION</li>
+               <li>OUR TEAM</li>
+               <li>BLOG</li>
+               <li>WORKOUT&nbsp;PROGRAM</li>
+               <li>HEALTHY RECIPES</li>
+               <li>B2B OPTIONS</li>
+               <li>CONTACT US</li>
+               <li>MEAL PLANS</li>
+               <li>EXPERTS</li>
+               <li></li>
+               <li>FAQ</li>
+               <li>PILOT PROGRAMS</li>
+               <li></li>
+               <li></li>
+               <li>STORE</li>
+               <li>ROUTINES</li>
+            </nav>
+              
+                <!-- <li> WORKOUTS</li>
+                <li> WORKOUT VIDEOS</li>
+                <li>CUSTOM WORKOUTS</li>
+                <li>PROGRAMS</li>
+                <li>WORKOUT PROGRAM</li>
+                <li>MEAL PLANS</li>
+                <li>PILOT PROGRAMS</li>
+                <li>ROUTINES</li>
+           -->
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
