@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        
+    </style>
+   
+</head>
+<body>
+
+
+
+
+    <h1>SIGN</h1>
+   
+    
+
+    <button>
+        <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=570289219307.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.fitnessblender.com%2Flogin%2Fcallback%2Fgoogle&scope=openid%20profile%20email&response_type=code&state=uFMWh8l45lAOdqYSqaO5pshPi1BXcShyRmjI2xWW&service=lso&o2v=1&flowName=GeneralOAuthFlow">GOOGLE</a>
+        
+    </button>
+
+  
+
+
+
+    <form>
+        <input type="text"  id="first_name" placeholder="enter your first name">
+        <input type="text"  id="second_name" placeholder="enter your second name">
+        <input type="text" id="email" placeholder="enter your email" >
+        
+        <input type="password" id="password" placeholder="enter your password">
+        <input type="password" id="confirm" placeholder="confirm password">
+        <input type="checkbox" id="check" value="true"> I am not robot
+       
+    </form>
+    <button id="join">join</button>
+    <button>
+        <a href="demologin.html">log in</a>
+        
+        </button>
+</body>
+</html>
+
+<script>
+
+
+       
+    let form=document.querySelector("form")
+    let ar=JSON.parse(localStorage.getItem("data"))||[]
+    document.getElementById("join").addEventListener("click",function(){
+        let check=document.getElementById("check")
+        if(check.checked==true){
+
+        
+
+
+        let count=0
+        let obj={
+             first_name:form.first_name.value,
+             second_name:form.second_name.value,
+             email:form.email.value,
+             password:form.password.value,
+             confirm:form.confirm.value,
+        }
+       
+
+        if(obj.password==obj.confirm){
+            ar.push(obj)
+            localStorage.setItem("data",JSON.stringify(ar))
+            count++
+            
+        }
+        else{
+            alert("please check your password")
+        }  
+        
+        
+    } 
+    })
+    
+
+    
+    
+    
+</script>
