@@ -1,13 +1,167 @@
-#container{
-   
-    height: auto; 
-    width: 100%; 
-   border: 1px solid;
-    background: url("https://d18zdz9g6n5za7.cloudfront.net/healthy_living/masthead-healthy.jpg") ;
-    
-    
+#container {
+
+  height: auto;
+  width: 100%;
+  border: 1px solid;
+  background: url("https://d18zdz9g6n5za7.cloudfront.net/healthy_living/masthead-healthy.jpg");
+
+
 
 }
 
 
 
+#navbar {
+  height: 130px;
+  display: flex;
+  text-decoration: none;
+
+  justify-content: space-between;
+
+
+}
+
+
+
+li {
+  display: flex;
+  list-style: none;
+  float: left;
+  padding: 10px;
+
+  padding-top: 60px;
+
+
+}
+
+ul {
+
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  width: 70%;
+
+
+
+}
+
+
+
+#navbar>div:nth-child(3) {
+  padding: 10px 10px 10px;
+  width: 15%;
+  padding-top: 60px;
+  font-size: large;
+  text-align: center;
+
+}
+
+#navbar>div:nth-child(4) {
+  width: 70%;
+  display: flex;
+  width: 10%;
+  padding-top: 40px;
+
+
+}
+
+#search>img:nth-child(1) {
+  margin-top: -10px;
+  padding-right: 10px;
+  filter: invert(100%);
+  cursor: pointer;
+
+}
+
+#search>img:nth-child(2) {
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+
+#logo {
+  width: 10%;
+
+}
+
+#logo img {
+  width: 100%;
+
+  margin-top: 15px;
+}
+
+
+.fas {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+  margin-left: -30px;
+
+
+}
+
+.div_cursor {
+  display: none;
+}
+
+li {
+  display: block;
+}
+
+.fas {
+  display: inline-block;
+}
+
+li:hover .div_cursor {
+  display: flex;
+  height: 50px;
+  width: 100%;
+
+  background-color: rgb(29, 28, 28);
+  text-align: center;
+
+  margin-top: 50px;
+  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 5px;
+  margin-left: -10px;
+
+}
+
+.drop {
+  display: flex;
+}
+
+.drop {
+  display: none;
+}
+
+#sign:hover .drop {
+  display: inline-block;
+
+  height: 50px;
+  width: 100%;
+
+
+  margin-top: 20px;
+}
+
+#sign button {
+  margin-top: 5px;
+  background-color: #1d1d1e;
+  color: white;
+  font-size: large;
+}
+
+#mid2 img,
+#mid3 img,
+#mid4 img,
+#mid5 img,
+#mid6 img,
+#mid7 img,
+#mid8 img {
+  width: 100%;
+}

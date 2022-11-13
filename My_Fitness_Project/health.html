@@ -5,7 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Document</title>
+    <style>
+        #head3 {
+
+            font-size: large;
+        }
+
+        #navbar a {
+            cursor: pointer;
+            /* background-color: rgb(25, 25, 29); */
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+
+        }
+
+
+        #navbar {
+            color: white;
+        }
+
+        p {
+            font-size: large;
+        }
+    </style>
     <link rel="stylesheet" href="workout.css">
     <link rel="stylesheet" href="health.css">
 </head>
@@ -13,34 +42,83 @@
 <body>
 
     <div id="container">
+
+
         <div id="navbar">
             <div id="logo">
 
-             <a href="index.html">   <img style="width:35% ; padding-left: 50px; margin-top: 7px;" src="SWEAT BOSS! & WEIGHT LOSS! (6).png"
-                    alt=""></a>
+                <a href="index.html"> <img src="SWEAT BOSS! & WEIGHT LOSS! (6).png" alt=""></a>
             </div>
             <ul>
 
-                <li> <a href="workout.html">WORKOUTS</a> <span>🢓</span></li>
-                <li> <a href="program.html">PROGRAMS </a><span>🢓</span></li>
-                <li> <a href="health.html"> HEALTHY LIVING</a><span>🢓</span></li>
-                <li> <a href="community.html">COMMUNITY</a> <span>🢓</span></li>
-                <li> <a href="#">ABOUT</a><span>🢓</span> </li>
-                <li> <a href="#">STORE</a></li>
-                <li style="color:rgb(244, 244, 250); "> <a href="#">MEMBERSHIP</a> </li>
+                <li> <a href="workout.html"> WORKOUT</a>
+                    <div class="div_cursor">
+                        <a href="https://youtu.be/fcN37TxBE_s">WORKOUT <br> VIDEO</a>
+                    </div>
+                </li><i class="fas fa-caret-down"></i>
+                <li><a href="program.html"> PROGRAMS</a>
+                    <div class="div_cursor">
+
+                        <a href="https://youtu.be/PYCr8dcmZyg">PROGRAMS <br>VIDEO </a>
+                    </div>
+                </li><i class="fas fa-caret-down"></i>
+                <li> <a href="health.html"> HEALTHY LIVING</a>
+                    <div class="div_cursor">
+                        <a href="https://youtu.be/9klGIcyAPeo">HEALTHY LIVING <br>VIDEO</a>
+                    </div>
+                </li><i class="fas fa-caret-down"></i>
+                <li> COMMUNITY
+                    <div class="div_cursor">
+                        <a href="https://youtu.be/0IYlUbxwzOQ">COMMUNITY <br>VIDEO </a>
+                    </div>
+                </li>
+                <div class="div_cursor">
+                    <a href="https://youtu.be/0IYlUbxwzOQ">COMMUNITY <br>VIDEO </a>
+                </div>
+                <i class="fas fa-caret-down"></i>
+
+                <li><a href="store_example.html"> STORE</a>
+
+                </li><i class="fas fa-caret-down"></i>
+                <li style="color:rgb(244, 244, 250); "> <a href="#">MEMBERSHIP</a> </li><i
+                    class="fas fa-caret-down"></i>
+
+
+
 
             </ul>
 
-            <div> <a href="#">Hi Sign in <br>MyFitness</a></div>
+            <div id="sign"> <a href="demo._signup.html">Hi Sign in <br>MyFitness</a>
+                <div class="drop">
+
+
+
+                    <a href="login.html"> <button style="padding:5px 50px ;" id="join">
+
+
+                            JOIN</button></a>
+
+                    <a href="signup.html"> <button style="padding:5px 50px ;" id="join">SIGN IN</button></a>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- <div> <a href="#">Hi Sign in <br>MyFitness</a></div> -->
             <div id="search">
 
                 <img width="25%" height="85px"
                     src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-name%3D%22Layer%201%22%20viewBox%3D%220%200%2064%2064%22%3E%3Ccircle%20cx%3D%2222.01%22%20cy%3D%2222%22%20r%3D%2220.02%22%20fill%3D%22none%22%20stroke%3D%22%23010101%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23010101%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%224%22%20d%3D%22M35.94%2C36Q49%2C49%2C62%2C62%22%2F%3E%3C%2Fsvg%3E"
                     alt="">
-                <img width="30%" height="55px"
-                    src="https://cdn.iconscout.com/icon/free/png-128/shopping-1312-433867.png" alt="dhgfjh">
+                <a href="store_cart.html"><img width="100%" height="55px"
+                        src="https://cdn.iconscout.com/icon/free/png-128/shopping-1312-433867.png" alt="dhgfjh"></a>
+                <h3 id="head3"></h3>
             </div>
         </div>
+
 
         <!-- mid part1 -->
 
@@ -48,7 +126,7 @@
             <h4>HEALTHY LIVING</h4>
             <h1>Live Well, Feel Great and Look Great. </h1>
             <p>A huge selection of health and fitness content,
-                 healthy recipes and transformation stories to help 
+                healthy recipes and transformation stories to help
                 you get fit and stay fit!</p>
         </div>
 
@@ -61,35 +139,71 @@
         <h1>Fitness</h1>
         <h3>View All Fitness Articles</h3>
         <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1195-what-is-rib-flare-and-how-to-tell-if-you-have-it-9bb4.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1126-looking-to-start-a-family-what-you-need-to-know-about-exercise-and-fertility-a2cc.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1125-how-to-do-a-burpee-fitnessblenders-comprehensive-guide-846b.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1039-new-to-running-heres-what-you-should-know-a558.jpg">
+            </div>
         </div>
     </div>
 
-     <!-- mid part3 -->
-     <div id="mid3">
+    <!-- mid part3 -->
+    <div id="mid3">
         <h1>Health</h1>
         <h3>View All Health Articles</h3>
         <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1130-understanding-the-importance-of-the-pelvic-floor-during-pregnancy-9207.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1039-new-to-running-heres-what-you-should-know-a558.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1030-10-exercises-you-can-do-at-work-b9c7.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1024-helpful-exercises-for-knee-valgus-ae6d.jpg">
+            </div>
         </div>
     </div>
 
 
-     <!-- mid part4 -->
-     <div id="mid4">
+    <!-- mid part4 -->
+    <div id="mid4">
         <h1>Nutrition</h1>
         <h3>View All Nutrition Articles</h3>
         <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1134-the-relationship-between-food-and-mood-9c6d.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-994-7-health-benefits-to-eating-meals-as-a-family-8390.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-944-eating-disorders-explained-contributing-factors-and-lived-experiences-ade2.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-908-understanding-sugar-addiction-and-ways-to-moderate-sugar-consumption-92d4.jpg">
+            </div>
         </div>
     </div>
 
@@ -98,10 +212,20 @@
         <h1>Healthy Recipes</h1>
         <h3>View All Healthy Recipes Articles</h3>
         <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1301-rustic-red-rice-98e5.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1229-egg-and-sun-dried-tomato-stuffed-zucchini-a0db.jpg">
+            </div>
+            <div>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1233-easy-salmon-patties-9197.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1232-one-pan-lemon-artichoke-chicken-9656.jpg">
+            </div>
         </div>
     </div>
 
@@ -109,10 +233,22 @@
         <h1>Experts</h1>
         <h3>View All Experts Articles</h3>
         <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1126-looking-to-start-a-family-what-you-need-to-know-about-exercise-and-fertility-a2cc.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1039-new-to-running-heres-what-you-should-know-a558.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1030-10-exercises-you-can-do-at-work-b9c7.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1031-6-ways-to-overcome-gym-anxiety-9733.jpg">
+            </div>
         </div>
     </div>
 
@@ -120,10 +256,22 @@
         <h1>Mental Health</h1>
         <h3>View All Mental Health Articles</h3>
         <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1316-the-role-of-exercise-in-addiction-treatment-a022.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1314-how-to-promote-a-positive-body-image-in-your-children-b97e.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1315-how-personality-traits-shape-exercise-behaviors-b45e.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1313-when-rest-is-more-important-than-working-out-9898.jpg">
+            </div>
         </div>
     </div>
 
@@ -131,10 +279,22 @@
         <h1>Wellness Videos</h1>
         <h3>View All Videos</h3>
         <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/640/640-64-guided-meditation-for-grief-9028.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/640/640-62-guided-meditation-for-caregivers-a4f8.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/640/640-63-mindfulness-meditation-to-enhance-motivation-a0fe.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/640/640-37-control-your-breath-with-pursed-lip-breathing-99ce.jpg">
+            </div>
         </div>
     </div>
 
@@ -187,3 +347,11 @@
 </body>
 
 </html>
+
+<script>
+
+
+    let c = JSON.parse(localStorage.getItem("pass"))
+    let d = c.length
+    document.getElementById("head3").innerText = d
+</script>

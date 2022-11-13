@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url("dark-1839088_1920.jpg");
+            color: white;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+        }
+
+        #container>div {
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        }
+
+        button {
+            font-size: large;
+            padding: 5px 10px;
+        }
+
+        #checkout {
+            margin-left: 80%;
+            padding: 2px 20px;
+            margin-bottom: 40px;
+        }
+
+        p,
+        h2,
+        h3 {
+            font-size: large;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Total <span>Price</span> </h1>
+
+    <h3>final</h3>
+    <h2>Number of Items in Cart <h4>count</h4>
+    </h2>
+
+    <a href="checkout.html"> <button id="checkout">CheckOut</button></a>
+    <div id="container">
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    let x = 1
+    let z = 0
+    let data = JSON.parse(localStorage.getItem("pass"))
+
+    let sum = data.reduce((acc, el) => acc + el.price, 0)
+    //   document.querySelector("span").innerText = sum
+
+    let y = data.length
+    y = JSON.parse(localStorage.getItem("num_item")) || y
+    document.querySelector("h4").innerText = y
+    // document.getElementById("head3").innerText=cardata.length
+
+    let count = 0
+    let cont = document.getElementById("container")
+    let total = JSON.parse(localStorage.getItem("final")) || sum
+
+
+    if (total >= 0) {
+
+
+        document.querySelector("h3").innerText = total
+
+
+    }
+
+    function display(data) {
+
+
+
+        data.forEach(element => {
+
+
+            let div = document.createElement("div")
+
+            let img = document.createElement("img")
+            img.setAttribute("src", element.img)
+
+            let name = document.createElement("h3")
+            name.innerText = element.name
+
+            let price = document.createElement("p")
+            price.innerText = element.price
+
+
+
+
+            let incre = document.createElement("button")
+            incre.innerText = "+"
+
+
+            x = total
+            incre.addEventListener("click", function () {
+                y++
+                document.querySelector("h4").innerText = y
+                localStorage.setItem("num_item", y)
+                count++
+                total = (count * element.price) + x
+
+
+
+                document.querySelector("h3").innerText = total
+
+                localStorage.setItem("final", total)
+
+
+
+
+            })
+            let decre = document.createElement("button")
+
+            decre.innerText = "-"
+
+            decre.addEventListener("click", function () {
+                if (document.querySelector("h4").innerText >= 1) {
+
+
+
+                    count = 0
+
+                    y--
+                    document.querySelector("h4").innerText = y
+                    localStorage.setItem("num_item", y)
+
+
+                    count++
+
+                    total = total - (count * element.price)
+                    document.querySelector("h3").innerText = total
+
+                    localStorage.setItem("final", total)
+                }
+
+            })
+
+
+
+            div.append(img, name, price, incre, decre)
+            cont.append(div)
+
+        });
+
+    }
+
+
+
+
+    display(data)
+
+
+
+
+</script>
