@@ -1,63 +1,74 @@
 body {
     width: auto;
     background: url("woman-1822459_1920.jpg");
+
     font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 #container {
-    height: auto;
+    height: 100px;
     display: flex;
     margin-top: -10px;
-    color: white;
+
+
 }
 
 #navbar {
+    height: 130px;
     display: flex;
-    /* background-color: black; */
+    text-decoration: none;
+
+    justify-content: space-between;
+
+
 }
+
+
 
 li {
     display: flex;
     list-style: none;
     float: left;
     padding: 10px;
+
     padding-top: 60px;
-    align-items: flex-end;
+
 
 }
 
 ul {
+
+    height: auto;
     display: flex;
-    text-align: left;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
     width: 70%;
-    margin-left: -300px;
+
+
+
 }
 
-span {
-    display: flex;
-    font-weight: bolder;
+#navbar {
+    color: white;
 }
 
 #navbar>div:nth-child(3) {
     padding: 10px 10px 10px;
+    width: 15%;
     padding-top: 60px;
     font-size: large;
+    text-align: center;
 
 }
 
 #navbar>div:nth-child(4) {
-    width: 50%;
+    width: 70%;
     display: flex;
     width: 10%;
     padding-top: 40px;
-    margin-left: 20px;
-}
 
-#search {
-    display: flex;
-    margin-left: -40px;
-    padding-left: 50px;
-    /* background-color: rgb(169, 150, 150); */
+
 }
 
 #search>img:nth-child(1) {
@@ -65,25 +76,101 @@ span {
     padding-right: 10px;
     filter: invert(100%);
     cursor: pointer;
+
 }
-#search>img:nth-child(2){
+
+#search>img:nth-child(2) {
     filter: invert(100%);
     cursor: pointer;
+}
+
+
+
+#logo {
+    width: 10%;
+
+}
+
+#logo img {
+    width: 100%;
+
+    margin-top: 15px;
+}
+
+
+.fas {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    margin-left: -30px;
+
+}
+
+.div_cursor {
+    display: none;
+}
+
+li {
+    display: block;
+}
+
+.fas {
+    display: inline-block;
+}
+
+li:hover .div_cursor {
+    display: flex;
+    height: 50px;
+    width: 100%;
+
+    background-color: rgb(29, 28, 28);
+    text-align: center;
+
+    margin-top: 50px;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 5px;
+    margin-left: -10px;
+
+}
+
+.drop {
+    display: flex;
+}
+
+.drop {
+    display: none;
+}
+
+#sign:hover .drop {
+    display: inline-block;
+
+    height: 50px;
+    width: 100%;
+
+    /* */
+    margin-top: 20px;
+}
+
+#sign button {
+    margin-top: 5px;
 }
 
 #mid {
     display: flex;
     height: 500px;
     width: 100%;
-    /* border: 1px solid; */
+
     margin: auto;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 #mid>div {
     height: auto;
     width: 30%;
-    /* border: 1px solid; */
+    /* */
     padding: 50px;
     color: white;
 
@@ -109,7 +196,7 @@ span {
     font-weight: bold;
     font-size: medium;
     cursor: pointer;
-    
+
 }
 
 
@@ -117,7 +204,7 @@ span {
 #mid2 {
     height: auto;
     width: 100%;
-    /* border: 1px solid; */
+    /* */
     margin: auto;
     text-align: center;
     align-items: center;
@@ -128,7 +215,7 @@ span {
     height: auto;
     width: 100%;
     margin: auto;
-    /* border: 1px solid; */
+    /* */
 
 
 
@@ -172,7 +259,7 @@ span {
 
 #mid3>div {
 
-    /* border: 1px solid; */
+    /* */
     text-align: center;
 }
 
@@ -207,7 +294,7 @@ span {
 #mid4 {
     height: auto;
     width: 100%;
-    /* border: 1px solid; */
+    /* */
     margin: auto;
     text-align: center;
     align-items: center;
@@ -232,7 +319,7 @@ span {
 
     height: 500px;
     width: 100%;
-    /* border: 1px solid; */
+    /* */
     margin: auto;
 
     background: #f0f4f6;
@@ -248,16 +335,14 @@ span {
     column-gap: 10px;
 }
 
-#card>div {
-    border: 1px solid;
-}
+
 
 
 #bottom {
     display: flex;
     height: auto;
     width: 100%;
-    /* border: 1px solid; */
+    /* */
     margin: auto;
     justify-content: space-between;
     background-color: rgb(26, 26, 38);
@@ -269,7 +354,7 @@ span {
 
     height: auto;
     width: 30%;
-    /* border: 1px solid; */
+    /* */
     color: white;
 
 }
@@ -278,7 +363,7 @@ span {
     display: flex;
     height: auto;
     width: 60%;
-    /* border: 1px solid; */
+    /* */
     color: white;
 
 }
@@ -317,3 +402,17 @@ nav {
     text-decoration: none;
 }
 
+
+.drop {
+
+    display: none;
+}
+
+li:hover .drop {
+    height: 100px;
+    width: 50%;
+    display: block;
+    background-color: black;
+
+
+}

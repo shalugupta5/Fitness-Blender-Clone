@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+
+    <style>
+        #cont {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+
+        }
+
+        #cont>div {
+
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        }
+
+        #cont p {
+            font-size: larger;
+            font-weight: 800;
+        }
+
+        body {
+            background: none;
+        }
+
+        #navbar {
+            color: black;
+            background: url("activity-1583805_1920.jpg")
+        }
+
+        #search>img:nth-child(2) {
+            filter: invert(100%);
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+        #navbar a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #search>img:nth-child(1) {
+            margin-top: -10px;
+            padding-right: 10px;
+            filter: none;
+            cursor: pointer;
+
+        }
+
+        .div_cursor a {
+            background-color: cornsilk;
+
+            font-weight: bold;
+
+
+        }
+
+        h5 {
+            margin-left: 40%;
+            font-size: large;
+        }
+
+        .fas {
+            display: flex;
+            align-items: center;
+            padding-top: 40px;
+            margin-left: -30px;
+            color: black
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id="navbar">
+        <div id="logo">
+
+            <a href="index.html"><img src="SWEAT BOSS! & WEIGHT LOSS! (6).png" alt=""> </a>
+
+        </div>
+        <ul>
+
+
+            <li> <a href="program.html"> WORKOUT</a>
+                <div class="div_cursor">
+                    <a href="https://youtu.be/fcN37TxBE_s">WORKOUT <br> VIDEO</a>
+                </div>
+            </li><i class="fas fa-caret-down"></i>
+            <li><a href="program.html"> PROGRAMS</a>
+                <div class="div_cursor">
+
+                    <a href="https://youtu.be/PYCr8dcmZyg">PROGRAMS <br>VIDEO </a>
+                </div>
+            </li><i class="fas fa-caret-down"></i>
+            <li> <a href="health.html"> HEALTHY LIVING</a>
+                <div class="div_cursor">
+                    <a href="https://youtu.be/9klGIcyAPeo">HEALTHY LIVING <br>VIDEO</a>
+                </div>
+            </li><i class="fas fa-caret-down"></i>
+            <li> COMMUNITY
+                <div class="div_cursor">
+                    <a href="https://youtu.be/0IYlUbxwzOQ">COMMUNITY <br>VIDEO </a>
+                </div>
+            </li>
+            <div class="div_cursor">
+                <a href="https://youtu.be/0IYlUbxwzOQ">COMMUNITY <br>VIDEO </a>
+            </div>
+            <i class="fas fa-caret-down"></i>
+
+            <li><a href="store_example.html"> STORE</a>
+
+            </li><i class="fas fa-caret-down"></i>
+            <li style="color:rgb(244, 244, 250); "> <a href="#">MEMBERSHIP</a> </li><i class="fas fa-caret-down"></i>
+
+
+
+
+        </ul>
+
+        <div id="sign"> <a href="demo._signup.html">Hi Sign in <br>MyFitness</a>
+            <div class="drop">
+                <!-- <h3>JOIN FOR FREE</h3> <br> -->
+
+
+                <a href="login.html"> <button style="padding:5px 50px ;" id="join">
+
+
+                        JOIN</button></a>
+
+                <a href="signup.html"> <button style="padding:5px 50px ;" id="join">SIGN IN</button></a>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div id="search">
+
+            <img width="25%" height="85px"
+                src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-name%3D%22Layer%201%22%20viewBox%3D%220%200%2064%2064%22%3E%3Ccircle%20cx%3D%2222.01%22%20cy%3D%2222%22%20r%3D%2220.02%22%20fill%3D%22none%22%20stroke%3D%22%23010101%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23010101%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%224%22%20d%3D%22M35.94%2C36Q49%2C49%2C62%2C62%22%2F%3E%3C%2Fsvg%3E"
+                alt="">
+            <a href="store_cart.html"><img width="100%" height="55px"
+                    src="https://cdn.iconscout.com/icon/free/png-128/shopping-1312-433867.png" alt="dhgfjh"></a>
+            <h3 id="head3">shalu</h3>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <a href="store_cart.html">cart</a>
+    <h5>PLEASE WAIT IT'S LOADING</h5>
+    <h1>FB Plus Passes</h1>
+    <!-- <h2>cart <span>NUMBER</span></h2> -->
+
+    <div id="cont">
+
+
+    </div>
+</body>
+
+</html>
+
+<script>
+
+
+
+    let cardata = JSON.parse(localStorage.getItem("pass")) || []
+    document.getElementById("head3").innerText = cardata.length
+
+    //      t=cardata.length
+    //    console.log(t)
+
+    //    let  t=JSON.parse(localStorage.getItem("num_item"))||cardata.length
+    //     console.log(t)
+
+
+    let cont = document.getElementById("cont")
+    async function url() {
+        try {
+
+
+            let value = await fetch("https://mock-server-fitness-blender.herokuapp.com/programs")
+            let data = await value.json()
+            display(data)
+        }
+        catch (err) {
+            console.log(err)
+        }
+    }
+    url()
+    let c = 0
+
+
+    function display(data) {
+        cont.innerText = null
+        data.forEach(element => {
+            let div = document.createElement("div")
+
+
+            let img = document.createElement("img")
+            img.setAttribute("src", element.img)
+
+            let name = document.createElement("h3")
+            name.innerText = element.name
+
+            let price = document.createElement("p")
+            price.innerText = element.price
+
+            let button = document.createElement("button")
+            button.innerText = "ADD TO BAG"
+
+            button.addEventListener("click", function () {
+
+                cardata.push(element)
+
+                localStorage.setItem("pass", JSON.stringify(cardata))
+                // c++
+                // document.querySelector("span").innerText=c
+                let t = cardata.length
+                document.getElementById("head3").innerText = t
+                //console.log(t)
+
+
+            })
+
+            div.append(img, name, price, button)
+            cont.append(div)
+
+
+        });
+
+    }
+
+
+</script>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url("man-2604149_1920.jpg");
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            height: auto;
+            width: 40%;
+
+            /* border: 1px solid; */
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+            width: 80%;
+            background-color: rgb(26, 26, 38);
+            color: white;
+
+            font-size: larger;
+        }
+
+        button {
+            padding: 10px;
+            width: 30%;
+            color: white;
+            font-size: larger;
+            background-color: rgb(26, 26, 38);
+            cursor: pointer;
+        }
+
+        button :hover {
+            background-color: #b79d9b;
+        }
+
+        .facebook {
+
+            background: #3f66b6;
+            border-color: #3f66b6;
+            margin-bottom: 15px;
+
+        }
+
+        .google {
+            background: #db4a3c;
+            border-color: #db4a3c;
+        }
+
+        #join,
+        #login {
+            background: #4296cb;
+            border-color: transparent;
+        }
+
+        p {
+            font-size: larger;
+            margin-top: -1px;
+        }
+
+        h2 {
+            background-color: black;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h2>JOIN SWEAT BOSS! & WEIGHT LOSS</h2>
+
+
+
+        <button class="google">
+            <a
+                href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=570289219307.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.fitnessblender.com%2Flogin%2Fcallback%2Fgoogle&scope=openid%20profile%20email&response_type=code&state=uFMWh8l45lAOdqYSqaO5pshPi1BXcShyRmjI2xWW&service=lso&o2v=1&flowName=GeneralOAuthFlow">google</a>
+
+        </button>
+
+        <button class="facebook">
+            <a href="facebook.com">facebook</a>
+        </button>
+
+
+
+        <form>
+            <input type="text" id="first_name" placeholder="enter your first name"><br>
+            <input type="text" id="second_name" placeholder="enter your second name"><br>
+            <input type="text" id="email" placeholder="enter your email"><br>
+
+            <input type="password" id="password" placeholder="enter your password"><br>
+            <input type="password" id="confirm" placeholder="confirm password"><br>
+            <input type="checkbox" id="check" value="true">
+            <p>are you human?</p>
+
+        </form>
+        <button id="join">join</button>
+        <button id="login">
+            <a href="demologin.html">log in</a>
+
+        </button>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+
+
+
+    let form = document.querySelector("form")
+
+    let ar = JSON.parse(localStorage.getItem("data")) || []
+    document.getElementById("join").addEventListener("click", function () {
+        let check = document.getElementById("check")
+        if (check.checked == true) {
+
+
+
+
+            let count = 0
+            let obj = {
+                first_name: form.first_name.value,
+                second_name: form.second_name.value,
+                email: form.email.value,
+                password: form.password.value,
+                confirm: form.confirm.value,
+            }
+
+
+            if (obj.password == obj.confirm) {
+                ar.push(obj)
+                localStorage.setItem("data", JSON.stringify(ar))
+                count++
+
+
+            }
+            else {
+                alert("PLEASE CHECK YOUR PASSWORD")
+            }
+            alert("SIGN UP SUCCESSFUL")
+
+        }
+        else {
+            alert("ARE you A HUMAN, PLASE CHECK THE CHECKBOX")
+        }
+    })
+
+
+
+
+
+</script>

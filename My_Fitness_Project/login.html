@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url("man-2604149_1920.jpg");
+            color: white;
+        }
+
+        .container {
+            height: auto;
+            width: 40%;
+            border: 1px solid;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+            width: 80%;
+            background-color: rgb(26, 26, 38);
+            color: white;
+
+            font-size: larger;
+        }
+
+        button {
+            padding: 10px;
+            width: 30%;
+            color: white;
+            font-size: larger;
+            background-color: rgb(26, 26, 38);
+            cursor: pointer;
+        }
+
+        h2 {
+            background-color: black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>JOIN SWEAT BOSS! & WEIGTH LOSS</h2>
+
+        <form>
+            <a href="demo._signup.html"></a>
+            <input type="text" id="first_name" placeholder="enter your first name">
+            <input type="text" id="second_name" placeholder="enter your second name">
+            <input type="text" id="email" placeholder="enter your email">
+
+            <input type="password" id="password" placeholder="enter your password">
+
+
+            <input type="submit">
+        </form>
+    </div>
+    <h1></h1>
+</body>
+
+</html>
+
+<script>
+
+    let form = document.querySelector("form")
+    console.log(form)
+    let data = JSON.parse(localStorage.getItem("data"))
+
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault()
+        let first_name = form.first_name.value
+        let second_name = form.second_name.value
+        let email = form.email.value
+        let password = form.password.value
+
+
+
+        display(data, first_name, second_name, email, password)
+
+    })
+
+
+
+    function display(data, first_name, second_name, email, password) {
+
+        let count = 0
+        for (let i = 0; i < data.length; i++) {
+            if (first_name == data[i].first_name && second_name == data[i].second_name &&
+                email == data[i].email && password == data[i].password) {
+
+                count++
+                alert("welcome")
+                let button = document.createElement("button")
+                button.innerText = ""
+                //  document.querySelector("h1").append(button1)
+
+                let anchor = document.createElement("a")
+                let textNode = document.createTextNode("clickme")
+                anchor.appendChild(textNode)
+                anchor.href = "index.html";
+                button.appendChild(anchor);
+                // document.button1.appendChild(anchor);
+                document.querySelector("h1").append(button)
+
+
+
+                break;
+
+            }
+
+
+
+
+
+        };
+        if (count == 0) {
+            alert("sorry")
+        }
+
+    }
+
+
+
+</script>

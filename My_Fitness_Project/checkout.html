@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: url("training-828764_1920.jpg");
+      color: white;
+    }
+
+    .container {
+      height: auto;
+      width: 40%;
+      margin: auto;
+      /* border: 1px solid; */
+      text-align: center;
+
+    }
+
+    input {
+      padding: 10px;
+      margin: 5px;
+      width: 80%;
+      background-color: rgb(26, 26, 38);
+      color: white;
+
+      font-size: larger;
+    }
+
+    h2 {
+      background-color: black;
+      padding: 10px;
+    }
+
+    #proceed {
+      padding: 5px 40px;
+      cursor: pointer;
+      border: none;
+      font-size: larger;
+    }
+
+    #proceed:hover {
+      background-color: rgb(132, 132, 194);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Enter Your Details</h2>
+    <form>
+
+      <input type="text" id="first_name" placeholder="enter your first name"><br>
+      <input type="text" id="second_name" placeholder="enter your second name"><br>
+      <input type="text" id="email" placeholder="enter your email"><br>
+
+      <input type="text" id="city" placeholder="enter your address"><br>
+      <input type="number" id="num" placeholder="enter your Mobile Number"><br>
+      <input type="number" id="pin" placeholder="enter your 12 Digit card number"><br>
+
+
+
+
+    </form>
+    <button id="proceed">Proceed
+      <!-- <a href="demologin.html">log in</a> -->
+
+    </button>
+
+  </div>
+</body>
+
+</html>
+
+<script>
+  let form = document.querySelector("form")
+  let ar = JSON.parse(localStorage.getItem("money")) || []
+  document.getElementById("proceed").addEventListener("click", function () {
+    let obj = {
+      first_name: form.first_name.value,
+      second_name: form.second_name.value,
+      email: form.email.value,
+      city: form.city.value,
+      mobile: form.num.value,
+      pin_number: form.pin.value
+
+    }
+    ar.push(obj)
+    localStorage.setItem("money", JSON.stringify(ar))
+    alert("THANK YOU FOR TRUSTING US")
+  })
+</script>

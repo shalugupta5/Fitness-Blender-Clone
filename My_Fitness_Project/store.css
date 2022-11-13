@@ -8,10 +8,13 @@
    
 
 }
+#head{
+   color: black;
+}
 
 #navbar {
    display: flex;
-   color: white;
+   
   
    /* background-color: black; */
 }
@@ -74,7 +77,7 @@ span {
     filter: invert(100%); 
    cursor: pointer;
 }
-#mid {
+#mid{
   
     height: 400px;
     width: 100%;
@@ -83,7 +86,7 @@ span {
     justify-content: space-between;
  }
 
- #mid2 , #mid3{
+ #mid2{
     display: grid;
     height: auto;
     grid-template-columns: repeat(4,1fr);
@@ -92,9 +95,105 @@ span {
     
  }
  
- #mid2>div, #mid3>div{
+ #mid2>div{
     border: 1px solid;
+    
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
  }
 
- 
+ #mid2>div>:nth-child(4){
+   display: inline;
+   
+   
+   
+ }
+
+ #innermid3{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: auto;
+   gap: 10px;
+ }
+ #innermid3>div{
+   border: 1px solid;
+ }
+ #mid4{
+   display: flex;
+   height: auto;
+   width: 100%;
+   border: 1px solid;
+   justify-content: space-evenly;
+ }
+
+ #mid4>div{
+   border: 1px solid;
+   height: auto;
+   width: 40%;
+ }
+ #mid4>div:nth-child(1)>img{
+   width: 100%;
+ }
+ #mid5{
+   height: auto;
+   width: 100%;
+   border: 1px solid;
+ }
+
+ #bottom {
+   display: flex;
+   height: auto;
+   width: 100%;
+   /* border: 1px solid; */
+   margin: auto;
+   justify-content: space-between;
+   background-color: rgb(26, 26, 38);
+   color: white;
+   padding-bottom: 50px;
+}
+
+#bottom>div:nth-child(1) {
+
+   height: auto;
+   width: 30%;
+   /* border: 1px solid; */
+   color: white;
+
+}
+
+#bottom>div:nth-child(2) {
+   display: flex;
+   height: auto;
+   width: 60%;
+   /* border: 1px solid; */
+   color: white;
+
+}
+
+nav li {
+   float: left;
+   list-style: none;
+   margin-bottom: -30px;
+
+
+}
+
+nav {
+   height: auto;
+   display: grid;
+   text-align: left;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: auto;
+
+
+}
+
+#bottom_img {
+   width: 30%;
+
+}
+
+#bottom_img {
+   width: 40%;
+   padding: 20%;
+
+}

@@ -5,45 +5,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <title>Document</title>
+    <style>
+        #navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #navbar {
+            color: white;
+        }
+
+        #head3 {
+
+            font-size: large;
+        }
+    </style>
     <link rel="stylesheet" href="program.css">
 </head>
 
 <body>
     <div id="container">
+
         <div id="navbar">
             <div id="logo">
 
-                <img style="width:35% ; padding-left: 50px; margin-top: 7px;" src="SWEAT BOSS! & WEIGHT LOSS! (6).png"
-                    alt="">
+                <a href="index.html"> <img src="SWEAT BOSS! & WEIGHT LOSS! (6).png" alt=""></a>
             </div>
             <ul>
 
-                <li> <a href="workout.html">WORKOUTS</a> <span>🢓</span></li>
-                <li> <a href="program.html">PROGRAMS </a><span>🢓</span></li>
-                <li> <a href="health.html"> HEALTHY LIVING</a><span>🢓</span></li>
-                <li> <a href="community.html">COMMUNITY</a> <span>🢓</span></li>
-                <li> <a href="#">ABOUT</a><span>🢓</span> </li>
-                <li> <a href="store.html">STORE</a></li>
-                <li style="color:rgb(244, 244, 250); "> <a href="#">MEMBERSHIP</a> </li>
+                <li> <a href="workout.html"> WORKOUT</a>
+                    <div class="div_cursor">
+                        <a href="https://youtu.be/fcN37TxBE_s">WORKOUT <br> VIDEO</a>
+                    </div>
+                </li><i class="fas fa-caret-down"></i>
+                <li><a href="program.html"> PROGRAMS</a>
+                    <div class="div_cursor">
+
+                        <a href="https://youtu.be/PYCr8dcmZyg">PROGRAMS <br>VIDEO </a>
+                    </div>
+                </li><i class="fas fa-caret-down"></i>
+                <li> <a href="health.html"> HEALTHY LIVING</a>
+                    <div class="div_cursor">
+                        <a href="https://youtu.be/9klGIcyAPeo">HEALTHY LIVING <br>VIDEO</a>
+                    </div>
+                </li><i class="fas fa-caret-down"></i>
+                <li> COMMUNITY
+                    <div class="div_cursor">
+                        <a href="https://youtu.be/0IYlUbxwzOQ">COMMUNITY <br>VIDEO </a>
+                    </div>
+                </li>
+                <div class="div_cursor">
+                    <a href="https://youtu.be/0IYlUbxwzOQ">COMMUNITY <br>VIDEO </a>
+                </div>
+                <i class="fas fa-caret-down"></i>
+
+                <li><a href="store_example.html"> STORE</a>
+
+                </li><i class="fas fa-caret-down"></i>
+                <li style="color:rgb(244, 244, 250); "> <a href="#">MEMBERSHIP</a> </li><i
+                    class="fas fa-caret-down"></i>
+
+
+
 
             </ul>
 
-            <div> <a href="#">Hi Sign in <br>MyFitness</a></div>
+            <div id="sign"> <a href="demo._signup.html">Hi Sign in <br>MyFitness</a>
+                <div class="drop">
+
+
+
+                    <a href="login.html"> <button style="padding:5px 50px ;" id="join">
+
+
+                            JOIN</button></a>
+
+                    <a href="signup.html"> <button style="padding:5px 50px ;" id="join">SIGN IN</button></a>
+
+
+                </div>
+
+            </div>
+
+
+
+
             <div id="search">
 
                 <img width="25%" height="85px"
                     src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-name%3D%22Layer%201%22%20viewBox%3D%220%200%2064%2064%22%3E%3Ccircle%20cx%3D%2222.01%22%20cy%3D%2222%22%20r%3D%2220.02%22%20fill%3D%22none%22%20stroke%3D%22%23010101%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23010101%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%224%22%20d%3D%22M35.94%2C36Q49%2C49%2C62%2C62%22%2F%3E%3C%2Fsvg%3E"
                     alt="">
-                <img width="30%" height="55px"
-                    src="https://cdn.iconscout.com/icon/free/png-128/shopping-1312-433867.png" alt="dhgfjh">
+                <a href="store_cart.html"> <img width="100%" height="55px"
+                        src="https://cdn.iconscout.com/icon/free/png-128/shopping-1312-433867.png" alt="dhgfjh"></a>
+                <h3 id="head3"></h3>
             </div>
-
-
-
-
-
         </div>
+
 
         <!-- mid part -->
 
@@ -52,8 +115,8 @@
             <h1> Follow professionally <br>
                 developed programs for <br>
                 fitness and nutrition.
-                 </h1>
-           
+            </h1>
+
         </div>
 
         <div class="para">
@@ -64,363 +127,462 @@
         </div>
 
         <!-- mid part2 -->
-<div id="mid2">
-    <h1>Full-Length Workout Programs</h1>
-    <h3>View All </h3>
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="mid2">
+            <h1>Full-Length Workout Programs</h1>
+            <h3>View All </h3>
+            <div>
+                <div>
+                    <img
+                        src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8774-fb-reboot-8-week-program-to-jumpstart-your-fitness-routine-83b3.jpg">
+                </div>
+                <div>
+                    <img
+                        src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-7776-4-week-fb-benchmark-program-total-body-strength-and-conditioning-bd26.jpg">
+                </div>
+                <div>
+                    <img
+                        src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-6526-4-week-fbfit-and-fb30-all-exclusive-workout-videos-35-or-45-minutes-a-day-90ff.jpg">
+                </div>
+                <div>
+                    <img
+                        src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-6170-4-week-fb-strong-round-2-a786.jpg">
+                </div>
+            </div>
+        </div>
+
+
     </div>
-</div>
 
+    <!-- mid part3 -->
 
-</div>
+    <div id="mid3">
+        <h1>Workout Program Features</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Features</th>
+                    <th class="included"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Features
+                        Work out with research-backed programs
+                        designed by Certified
+                        Personal Trainers (CPTs).</td>
+                    <td></td>
+                </tr>
 
-<!-- mid part3 -->
+                <tr>
+                    <td>
+                        Follow expertly-curated combinations of
+                        workouts from our free video library.</td>
+                    <td></td>
+                </tr>
 
-<div id="mid3">
-    <h1>Workout Program Features</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Features</th>
-                <th class="included"></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    Features	
-                    Work out with research-backed programs 
-                    designed by Certified
-                     Personal Trainers (CPTs).</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Take the guesswork out of planning
+                        routines and picking workouts.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Follow expertly-curated combinations of
-                     workouts from our free video library.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Focus your exercise time with proper
+                        structure for more effective results.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Take the guesswork out of planning
-                     routines and picking workouts.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Learn to modify individual exercises to
+                        accommodate virtually any fitness level.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Focus your exercise time with proper 
-                    structure for more effective results.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Improve overall health and
+                        functional fitness.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Learn to modify individual exercises to
-                     accommodate virtually any fitness level.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Schedule and track progress
+                        via the FB Calendar.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Improve overall health and 
-                    functional fitness.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Review each day's objectives
+                        and workout details.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Schedule and track progress 
-                    via the FB Calendar.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Complete as many times as you like.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Review each day's objectives
-                     and workout details.</td>
-                     <td></td>
-            </tr>
-
-            <tr>
-                <td>
-                    Complete as many times as you like.</td>
-                     <td></td>
-            </tr>
-
-            <tr>
-                <td>
-                    Get additional tips and
-                     information with a detailed
-                     program and nutrition guide.</td>
-                     <td></td>
-            </tr>
-        </tbody>
-    </table>
-<!-- div inside mid part3 -->
-    <div>
-        <div></div>
+                <tr>
+                    <td>
+                        Get additional tips and
+                        information with a detailed
+                        program and nutrition guide.</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- div inside mid part3 -->
         <div>
-            <p>Programs designated with the FB Plus 
-                badge are included with an active FB Plus membership. 
-                They are also enhanced with more
-                 daily exercise options from 
-                the FB Plus exclusive video library.</p>
+            <div></div>
+            <div>
+                <p>Programs designated with the FB Plus
+                    badge are included with an active FB Plus membership.
+                    They are also enhanced with more
+                    daily exercise options from
+                    the FB Plus exclusive video library.</p>
+            </div>
+        </div>
+        <button>VIEW FAQS AND NOTES</button>
+        <p>Back To Top</p>
+
+    </div>
+
+    <!-- mid part4 -->
+    <div id="mid4">
+        <h1>Quick Workout Challenges</h1>
+        <h3>View All </h3>
+        <div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-9687-fb-just-your-body-2-week-no-equipment-challenge-b0df.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-9443-fb-pilates-immersion-2-week-pilates-challenge-for-foundational-strength-and-stability-935e.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8622-fb-strong-runner-2-week-strength-focused-challenge-for-improving-running-performance-9544.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8081-fb-kettlebell-blend-2-week-kettlebell-challenge-for-functional-strength-a591.jpg">
+            </div>
         </div>
     </div>
-    <button>VIEW FAQS AND NOTES</button>
-    <p>Back To Top</p>
-
-</div>
-
-<!-- mid part4 -->
-<div id="mid4">
-    <h1>Quick Workout Challenges</h1>
-    <h3>View All </h3>
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
 
 
-<!-- mid part5 -->
+    <!-- mid part5 -->
 
-<div id="mid5">
-    <h1>Workout Program Features</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Features</th>
-                <th class="included"></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    Features	
-                    Work out with research-backed programs 
-                    designed by Certified
-                     Personal Trainers (CPTs).</td>
-                     <td></td>
-            </tr>
+    <div id="mid5">
+        <h1>Workout Program Features</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Features</th>
+                    <th class="included"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Features
+                        Work out with research-backed programs
+                        designed by Certified
+                        Personal Trainers (CPTs).</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Follow expertly-curated combinations of
-                     workouts from our free video library.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Follow expertly-curated combinations of
+                        workouts from our free video library.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Take the guesswork out of planning
-                     routines and picking workouts.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Take the guesswork out of planning
+                        routines and picking workouts.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Focus your exercise time with proper 
-                    structure for more effective results.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Focus your exercise time with proper
+                        structure for more effective results.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Learn to modify individual exercises to
-                     accommodate virtually any fitness level.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Learn to modify individual exercises to
+                        accommodate virtually any fitness level.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Improve overall health and 
-                    functional fitness.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Improve overall health and
+                        functional fitness.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Schedule and track progress 
-                    via the FB Calendar.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Schedule and track progress
+                        via the FB Calendar.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Review each day's objectives
-                     and workout details.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Review each day's objectives
+                        and workout details.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Complete as many times as you like.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Complete as many times as you like.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Get additional tips and
-                     information with a detailed
-                     program and nutrition guide.</td>
-                     <td></td>
-            </tr>
-        </tbody>
-    </table>
-<!-- div inside mid part5 -->
-    <div>
-        <div></div>
+                <tr>
+                    <td>
+                        Get additional tips and
+                        information with a detailed
+                        program and nutrition guide.</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- div inside mid part5 -->
         <div>
-            <p>Programs designated with the FB Plus 
-                badge are included with an active FB Plus membership. 
-                They are also enhanced with more
-                 daily exercise options from 
-                the FB Plus exclusive video library.</p>
+            <div></div>
+            <div>
+                <p>Programs designated with the FB Plus
+                    badge are included with an active FB Plus membership.
+                    They are also enhanced with more
+                    daily exercise options from
+                    the FB Plus exclusive video library.</p>
+            </div>
+        </div>
+        <button>VIEW FAQS AND NOTES</button>
+        <p>Back To Top</p>
+
+    </div>
+
+    <!-- mid part6 -->
+    <div id="mid6">
+        <h1>Meal Plans</h1>
+        <h3>View All </h3>
+        <div>
+            <div>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-7739-strength-building-meal-plan-9d87.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-7738-meals-under-30-minutes-meal-plan-for-busy-people-a32a.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-7128-around-the-world-1-week-omnivore-meal-plan-b211.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_21_fb-meal-plan-eat-real-food-and-feel-great.jpg">
+            </div>
         </div>
     </div>
-    <button>VIEW FAQS AND NOTES</button>
-    <p>Back To Top</p>
 
-</div>
+    <!-- mid part7 -->
 
-<!-- mid part6 -->
-<div id="mid6">
-    <h1>Quick Workout Challenges</h1>
-    <h3>View All </h3>
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
+    <div id="mid7">
+        <h1>Workout Program Features</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Features</th>
+                    <th class="included"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Features
+                        Work out with research-backed programs
+                        designed by Certified
+                        Personal Trainers (CPTs).</td>
+                    <td></td>
+                </tr>
 
-<!-- mid part7 -->
+                <tr>
+                    <td>
+                        Follow expertly-curated combinations of
+                        workouts from our free video library.</td>
+                    <td></td>
+                </tr>
 
-<div id="mid7">
-    <h1>Workout Program Features</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Features</th>
-                <th class="included"></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    Features	
-                    Work out with research-backed programs 
-                    designed by Certified
-                     Personal Trainers (CPTs).</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Take the guesswork out of planning
+                        routines and picking workouts.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Follow expertly-curated combinations of
-                     workouts from our free video library.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Focus your exercise time with proper
+                        structure for more effective results.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Take the guesswork out of planning
-                     routines and picking workouts.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Learn to modify individual exercises to
+                        accommodate virtually any fitness level.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Focus your exercise time with proper 
-                    structure for more effective results.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Improve overall health and
+                        functional fitness.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Learn to modify individual exercises to
-                     accommodate virtually any fitness level.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Schedule and track progress
+                        via the FB Calendar.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Improve overall health and 
-                    functional fitness.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Review each day's objectives
+                        and workout details.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Schedule and track progress 
-                    via the FB Calendar.</td>
-                     <td></td>
-            </tr>
+                <tr>
+                    <td>
+                        Complete as many times as you like.</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>
-                    Review each day's objectives
-                     and workout details.</td>
-                     <td></td>
-            </tr>
-
-            <tr>
-                <td>
-                    Complete as many times as you like.</td>
-                     <td></td>
-            </tr>
-
-            <tr>
-                <td>
-                    Get additional tips and
-                     information with a detailed
-                     program and nutrition guide.</td>
-                     <td></td>
-            </tr>
-        </tbody>
-    </table>
-<!-- div inside mid part7 -->
-    <div>
-        <div></div>
+                <tr>
+                    <td>
+                        Get additional tips and
+                        information with a detailed
+                        program and nutrition guide.</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- div inside mid part7 -->
         <div>
-            <p>Programs designated with the FB Plus 
-                badge are included with an active FB Plus membership. 
-                They are also enhanced with more
-                 daily exercise options from 
-                the FB Plus exclusive video library.</p>
+            <div></div>
+            <div>
+                <p>Programs designated with the FB Plus
+                    badge are included with an active FB Plus membership.
+                    They are also enhanced with more
+                    daily exercise options from
+                    the FB Plus exclusive video library.</p>
+            </div>
+        </div>
+        <button>VIEW FAQS AND NOTES</button>
+        <p>Back To Top</p>
+
+    </div>
+
+
+    <!-- mid part8 -->
+    <div id="mid8">
+        <h1>Pilot Programs</h1>
+        <h3>View All </h3>
+        <div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8931-fb-pregnancy-series-preconception-phase-b2f7.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8934-fb-pregnancy-series-third-trimester-phase-8391.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8933-fb-pregnancy-series-second-trimester-phase-9abb.jpg">
+            </div>
+            <div>
+                <img
+                    src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-8932-fb-pregnancy-series-first-trimester-phase-a6c7.jpg">
+            </div>
         </div>
     </div>
-    <button>VIEW FAQS AND NOTES</button>
-    <p>Back To Top</p>
+    <!-- bottom part -->
+    <div id="bottom">
+        <div>
+            <img id="bottom_img" src="SWEAT BOSS! & WEIGHT LOSS! (6).png" alt="">
 
-</div>
 
+        </div>
+        <div>
 
-<!-- mid part8 -->
-<div id="mid8">
-    <h1>Quick Workout Challenges</h1>
-    <h3>View All </h3>
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+            <nav>
+                <li> WORKOUTS</li>
+                <li>HEALTHY LIVING</li>
+                <li>ABOUT</li>
+                <li>MEMBERSHIP</li>
+                <li>FITNESS</li>
+                <li>CAREERS</li>
+                <li>FB PLUS</li>
+                <li>WORKOUTS VIDEOS</li>
+                <li>CUSTOM WORKOUTS</li>
+                <li>HEALTH</li>
+                <li>TUTORIALS</li>
+                <li>COMMUNITY</li>
+                <li>PROGRAMS</li>
+                <li>NUTRITION</li>
+                <li>OUR TEAM</li>
+                <li>BLOG</li>
+                <li>WORKOUT&nbsp;PROGRAM</li>
+                <li>HEALTHY RECIPES</li>
+                <li>B2B OPTIONS</li>
+                <li>CONTACT US</li>
+                <li>MEAL PLANS</li>
+                <li>EXPERTS</li>
+                <li></li>
+                <li>FAQ</li>
+                <li>PILOT PROGRAMS</li>
+                <li></li>
+                <li></li>
+                <li>STORE</li>
+                <li>ROUTINES</li>
+            </nav>
+
+        </div>
     </div>
-</div>
+
+    </div>
 
 
 
 </body>
 
 </html>
+<script>
+
+
+    let c = JSON.parse(localStorage.getItem("pass"))
+    let d = c.length
+    document.getElementById("head3").innerText = d
+</script>
